@@ -87,7 +87,7 @@ def menu():
          except requests.exceptions.ConnectionError:
              time.sleep(3)
              print(f"{m}Periksa Jaringan Anda !!!")
-             main()
+             menu()
          else:
              hps()
              banner()
@@ -102,7 +102,7 @@ def menu():
             r=requests.get("https://httpbin.org")
          except requests.exceptions.ConnectionError:
             print(f"{m}Periksa Jaringan Anda !!!")
-            main()
+            menu()
          else:
             hps()
             banner()
@@ -125,7 +125,7 @@ def menu():
          except requests.exceptions.ConnectionError:
             time.sleep(3)
             print(f"{m}Periksa Jaringan Anda !!!")
-            main()
+            menu()
          else:
             hps()
             banner()
@@ -152,7 +152,7 @@ def menu():
       else:
             print(f"{m}Wrong input!pleease input again")
             time.sleep(1)
-            main()
+            menu()
 
 if __name__=='__main__':
          os.system("git pull")
